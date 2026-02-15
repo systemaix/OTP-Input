@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTP Input | UX Design</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Enter Verification Code</h2>
+  <p>We sent a code to <span>user@email.com</span></p>
+
+  <div class="otp-field">
+    <input type="text" maxlength="1" class="space" />
+    <input type="text" maxlength="1" class="space" />
+    <input type="text" maxlength="1" class="space" />
+    <input type="text" maxlength="1" class="space" />
+  </div>
+
+  <button id="verifyBtn" disabled>VERIFY & PROCEED</button>
+  <p class="resend">Didn't get it? <a href="#">Resend Code</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
