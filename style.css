@@ -1,0 +1,55 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh; background: #0f172a; color: white;
+}
+
+.container {
+    background: #1e293b; padding: 40px; border-radius: 12px;
+    text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    width: 100%; max-width: 400px;
+}
+
+h2 { margin-bottom: 10px; font-weight: 600; }
+p { font-size: 14px; color: #94a3b8; margin-bottom: 30px; }
+p span { color: #38bdf8; font-weight: bold; }
+
+.otp-field {
+    display: flex; justify-content: space-between; gap: 10px;
+    margin-bottom: 30px;
+}
+
+.otp-field input {
+    width: 100%; height: 60px;
+    background: #334155; border: 2px solid #334155; border-radius: 8px;
+    color: white; font-size: 24px; font-weight: bold; text-align: center;
+    outline: none; transition: 0.3s;
+    caret-color: #38bdf8;
+}
+
+/* Focus State */
+.otp-field input:focus {
+    border-color: #38bdf8; background: #0f172a;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+/* Success State (Added via JS) */
+.otp-field input.filled { border-color: #22c55e; }
+
+/* Verify Button */
+button {
+    width: 100%; padding: 15px; background: #38bdf8; border: none;
+    border-radius: 8px; color: #0f172a; font-weight: bold; cursor: pointer;
+    font-size: 16px; opacity: 0.5; pointer-events: none; transition: 0.3s;
+}
+
+button.active { opacity: 1; pointer-events: all; }
+button:hover { background: #0ea5e9; }
+
+.resend { margin-top: 20px; margin-bottom: 0; }
+.resend a { color: #38bdf8; text-decoration: none; }
+.resend a:hover { text-decoration: underline; }
